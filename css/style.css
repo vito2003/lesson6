@@ -1,0 +1,73 @@
+.wrapper-box {
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	position: relative;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-delay: 0.2s;
+}
+.child-box {
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	transition: all 0.5s ease-out ;
+	box-shadow: 5px 10px 5px #888888;
+}
+.wrapper-box:hover {
+	background-color: blue;
+}
+.child-box:hover {
+	background-color: black;
+	transform: translate(-50%, -50%) rotate(0deg);
+
+}
+.text1 {
+	text-shadow: 2px 2px darkred;
+	margin-left: 200px;
+	opacity: 50%;
+}
+.borderblock {
+	width: 400px;
+	height: 50px;
+	background-color: lightblue;
+	margin-left: 500px;
+	margin-top: 10px;
+	border-radius: 30px 450px;
+	box-shadow: 5px 10px 5px #888888;
+	opacity: 50%;
+}
+.borderblock:hover{
+	opacity: 100%;
+}
+/*animaciebi*/ 
+.chaticon {
+	height: 100px;
+	animation: chatanimationnew 5s infinite 4s alternate;
+	position: absolute;
+}
+.animation-block {
+	position: relative;
+}
+
+/*@keyframes chatanimation {
+	0% {left: 200px; transform: rotate(0deg);}
+	25% {left: 400px; transform: rotate(45deg);}
+	50% {left: 600px; transform: rotate(360deg);}
+	75% {left: 800px; transform: rotate(45deg);}
+	100% {left: 1000px; transform: rotate(360deg);}
+} */
+@keyframes chatanimationnew {
+	0% {transform: translateY(200px);}
+	25%{transform: translateX(400px);}
+	50%{transform: translateX(600px);}
+	75%{transform: translateX(800px);}
+	100%{transform: translateX(1000px);}
+
+
+}
